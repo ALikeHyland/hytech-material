@@ -1,0 +1,40 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Meme Society</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav class="example-side" mode="side" opened>
+    Stuff
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-card>
+      <img src="https://imgur.com/gallery/wVdsSFn"/>
+      <mat-card-content>
+        <h2 class="example-h2">This meme is...</h2>
+
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="What did you think?">
+          </mat-form-field>
+        </form>
+
+        <section class="example-section">
+          <label class="example-margin">Align:</label>
+          <mat-radio-group [(ngModel)]="labelPosition">
+            <mat-radio-button class="example-margin" value="after"> 
+              After   
+            </mat-radio-button>
+            <mat-radio-button class="example-margin" value="before">
+              Before
+            </mat-radio-button>
+          </mat-radio-group>
+        </section>
+      </mat-card-content>
+    </mat-card>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+    
+
